@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>APRI Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>APRI Calculator</h1>
+
+    <label>AST Level (U/L):</label>
+    <input type="number" id="ast" placeholder="e.g., 80">
+
+    <label>Platelet Count (10⁹/L):</label>
+    <input type="number" id="platelet" placeholder="e.g., 150">
+
+    <label>Upper Limit of Normal AST (U/L):</label>
+    <input type="number" id="uln" placeholder="Default: 40" value="40">
+
+    <button onclick="calculateAPRI()">Calculate APRI</button>
+
+    <h2 id="result"></h2>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
